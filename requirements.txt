@@ -9,3 +9,5 @@ cloudpickle==2.00
 folium==0.14.0
 streamlit==1.23.1
 streamlit_folium==0.12.0
+Scikit-learn==1.2.2
+Scikit-plot==0.3.7
