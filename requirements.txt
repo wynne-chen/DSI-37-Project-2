@@ -1,0 +1,9 @@
+pandas==1.5.3
+geopandas==0.9.0
+numpy==1.23.5
+json==0.16
+altair==4.2.2
+pickle==0.7.5
+folium==0.14.0
+streamlit==1.23.1
+streamlit_folium==0.12.0
