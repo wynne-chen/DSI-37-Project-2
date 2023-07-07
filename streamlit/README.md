@@ -1,1 +1,1 @@
-Interact with the prediction model at https://githubberst-project-2-streamlitapp-itb7fi.streamlit.app/
+Interact with the prediction model at [https://dsi-37-project-2-team-shokupan.streamlit.app/](https://dsi-37-project-2-team-shokupan.streamlit.app/)
