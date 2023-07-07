@@ -459,10 +459,10 @@ def average_over_time(town):
     
       
      # filter off the NaN values inside the dic prior to sepearting them into lists 
-    for key,value in resale_dic.items():
-         if np.isnan(value) == True:
-             del resale_dic[key]
-             break
+     for key,value in resale_dic.items():
+        if np.isnan(value) == True:
+            del resale_dic[key]
+            break
      
      # reindexing all the months + need the months for plotting
      # seperating the key value pairs into list for annotation
