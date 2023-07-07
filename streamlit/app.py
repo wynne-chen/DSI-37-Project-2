@@ -452,23 +452,14 @@ def average_over_time(town):
      
      i = 2012
      while i < 2022:
-         n = 1
-         while n < 13:
-             if n < 10:
-                 resale_month = resale_town.loc[resale_town['tranc_month'] == n]
-                 resale_month_mean = round(resale_month['resale_price'].mean(),2)
-                 resale_dic[str(i) + '-0' + str(n)] = resale_month_mean
-                 n += 1
-             else:
-                 resale_month = resale_town.loc[resale_town['tranc_month'] == n]
-                 resale_month_mean = round(resale_month['resale_price'].mean(),2)
-                 resale_dic[str(i) + '-' + str(n)] = resale_month_mean
-                 n += 1
-         i += 1
-         
-     
+        resale_year = resale_town.loc[resale_town['tranc_year'] == i]
+        resale_year_mean = round(resale_year['resale_price'].mean(), 2)
+        resale_dic[str(i)] = resale_year_mean
+        i += 1
+    
+      
      # filter off the NaN values inside the dic prior to sepearting them into lists 
-     for key,value in resale_dic.items():
+    for key,value in resale_dic.items():
          if np.isnan(value) == True:
              del resale_dic[key]
              break
