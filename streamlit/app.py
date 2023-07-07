@@ -29,7 +29,7 @@ model = pickle.load(open(model_path, 'rb'))
 
 
 # load the PowerTransformer
-tr_model_path = Path(__file__).parent / 'powertransformer.pkl'
+tr_model_path = Path(__file__).parent / 'models/powertransformer.pkl'
 transformer = pickle.load(open(tr_model_path, 'rb'))
 transformer.set_output(transform="pandas")
 
