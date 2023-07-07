@@ -37,7 +37,7 @@ transformer.set_output(transform="pandas")
 # import some data
 
 # import combined train and weather (feature engineered) dataset for eda
-path = Path(__file__).parent / 'data/rain_pop_NaN.csv'
+path = Path(__file__).parent / 'data/train_pop_NaN.csv'
 df = pd.read_csv(path)
 
 
@@ -217,7 +217,7 @@ def main():
     
     with central:
         # now to bring in the map! it's centred on singapore's central catchment area.
-        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Stamen Toner', zoom_start=11)
+        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Stamen Toner', zoom_start=11, )
         
         
         
