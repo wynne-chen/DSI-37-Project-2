@@ -217,7 +217,7 @@ def main():
     
     with central:
         # now to bring in the map! it's centred on singapore's central catchment area.
-        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Stamen Toner', zoom_start=11, scrollWheelZoom=False)
+        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Toner', zoom_start=11, scrollWheelZoom=False)
         
         
         
