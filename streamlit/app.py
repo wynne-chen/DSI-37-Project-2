@@ -217,7 +217,7 @@ def main():
     
     with central:
         # now to bring in the map! it's centred on singapore's central catchment area.
-        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Toner', attr = '<a href=https://github.com/openmaptiles/maptiler-toner-gl-style>Toner</a>', zoom_start=11, scrollWheelZoom=False)
+        m = fs.Map(location=[1.363605, 103.814168],tiles = 'Stamen Toner', attr = '<a href=https://github.com/openmaptiles/maptiler-toner-gl-style>Toner</a>', zoom_start=11, scrollWheelZoom=False)
         
         
         
